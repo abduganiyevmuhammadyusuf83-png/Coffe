@@ -15,8 +15,6 @@ body {
 
 .main-section {
   display: flex;
-  margin-left: 90px;
-  justify-content: flex-start;
 }
 
 /* Logo Lable */
@@ -24,14 +22,25 @@ body {
     display: flex;
 }
 
+/* Logo Name */
+
+.logo-name{
+  font-size: 32px;
+}
+.logo img {
+  width: 56px;
+  height: 34px;
+}
+
 /* Navbar */
 .navbar {
-  padding: 25px 0;
+  padding: 30px 0;
+  margin-bottom: 100px;
 }
 
 .container {
   width: 90%;
-  max-width: 1300px;
+  max-width: 1500px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -41,13 +50,14 @@ body {
 .nav-links {
   display: flex;
   gap: 40px;
+  font-size: 16px;
   list-style: none;
 }
 
 .nav-links a {
   text-decoration: none;
   color: black;
-  font-size: 15px;
+  font-size: 20px;
   transition: 0.3s;
 }
 
@@ -57,4 +67,60 @@ body {
   padding: 12px 25px;
   border-radius: 7px;
   text-decoration: none;
+}
+/*Coffe Shop*/
+
+.coffe-shop {
+  display: flex;
+  max-width: 1500px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 300px;
+}
+.coffe-motto{
+  font-size: 25px;
+}
+.coffe-label {
+  font-size: 63px;
+}
+.order-btn {
+  background-color: #2f5d50;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.coffe-image {
+ position: relative;
+ width: 400px;
+ height: 450px;
+}
+
+.coffe-box {
+  position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    background-color: #E3EBE7; 
+    z-index: 1;
+}
+.coffe-image img {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    width: 320px;
+    z-index: 2;
+ }
+
+
+.media-icons {
+  display: table-row;
+}
+
+.media-icons img{
+  height: 32px;
+  width: 32px;
 }
