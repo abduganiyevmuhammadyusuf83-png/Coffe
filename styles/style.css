@@ -40,16 +40,17 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1500px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+
 .nav-links {
   display: flex;
-  gap: 40px;
+  gap: 70px;
   font-size: 16px;
   list-style: none;
 }
@@ -58,16 +59,64 @@ body {
   text-decoration: none;
   color: black;
   font-size: 20px;
-  transition: 0.3s;
 }
 
 .contact-btn {
   background-color: #2f5d50;
   color: white;
   padding: 12px 25px;
-  border-radius: 7px;
+  border-radius: 8px;
   text-decoration: none;
 }
+.hamburger {
+  display: none;
+}
+@media (max-width: 480px) {
+  .nav-links,.contact-btn { 
+    display: none;
+  }
+.hamburger {
+   position: absolute;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background-color: #141414;
+    border-radius: 5px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+   .main-section {
+    justify-content: center;
+  }
+  
+  .coffe-image {
+    display: none;
+  }
+    .media-icons {
+    display: none;
+  }
+  .coffe-motto {
+    font-size: 19px;
+  }
+    .coffe-shop {
+    font-size: 54px;
+  }
+  
+  
+}
+
+
+
 /*Coffe Shop*/
 
 .coffe-shop {
@@ -117,10 +166,38 @@ body {
 
 
 .media-icons {
-  display: table-row;
+  position: relative;
+}
+.social {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.media-icons img{
+/* Iconlar vertikal */
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.icons img {
+    width: 25px;
+    cursor: pointer;
+}
+
+/* Vertical text */
+.follow-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.media-icons img {
   height: 32px;
   width: 32px;
 }
