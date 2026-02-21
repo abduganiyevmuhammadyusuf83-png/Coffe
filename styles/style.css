@@ -40,7 +40,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -111,22 +111,17 @@ body {
     .coffe-shop {
     font-size: 54px;
   }
-  
-  
 }
-
-
 
 /*Coffe Shop*/
 
 .coffe-shop {
   display: flex;
-  max-width: 1500px;
-  margin: 10px auto;
+  max-width: 1400px;
+  margin: 80px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 300px;
+  gap: 310px;
 }
 .coffe-motto{
   font-size: 25px;
@@ -197,7 +192,54 @@ body {
     letter-spacing: 2px;
 }
 
+.media-icons {
+  left: 0px;
+}
 .media-icons img {
   height: 32px;
   width: 32px;
 }
+/* Coffe Shop */
+.coffe-cup {
+ display: flex;
+ gap: 100px;
+}
+.coffe-samwayle {
+padding: 90px;
+margin-top: 100px;
+}
+.cup-text {
+flex: 1;
+margin: 15px;
+
+}
+.cup-text h2{
+font-size: 38px;
+}
+
+.cup-text p {
+font-size: 15px;
+line-height: 35px;
+}
+.cup {
+ position: relative;
+ width: 400px;
+ height: 350px;
+}
+.coffe-cup-box{
+   position: absolute;
+    top: 0;
+    right: 0;
+    width: 380px;
+    height: 287px;
+    background-color: #FAE9E0; 
+    z-index: 1;
+
+}
+.cup img {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    width: 320px;
+    z-index: 2;
+ }
