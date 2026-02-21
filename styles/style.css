@@ -111,6 +111,15 @@ body {
     .coffe-shop {
     font-size: 54px;
   }
+
+   .coffe-labels {
+    align-items: center;
+    font-size: 54px;
+  }
+    .order-btn {
+    margin: 60px;
+    font-size: 20px;
+  }
 }
 
 /*Coffe Shop*/
@@ -124,15 +133,15 @@ body {
   gap: 310px;
 }
 .coffe-motto{
-  font-size: 25px;
+  font-size: 17px;
 }
 .coffe-label {
-  font-size: 63px;
+  font-size: 47px;
 }
 .order-btn {
   background-color: #2f5d50;
   color: white;
-  padding: 12px 25px;
+  padding: 15px 35px;
   border-radius: 5px;
   text-decoration: none;
 }
@@ -199,27 +208,28 @@ body {
   height: 32px;
   width: 32px;
 }
-/* Coffe Shop */
+
+
+/* Coffe Cup */
 .coffe-cup {
  display: flex;
+ 
+ margin-top: 100px;
  gap: 100px;
 }
-.coffe-samwayle {
-padding: 90px;
-margin-top: 100px;
-}
+
 .cup-text {
 flex: 1;
-margin: 15px;
+margin: 10px;
 
 }
 .cup-text h2{
-font-size: 38px;
+font-size: 37px;
 }
 
 .cup-text p {
 font-size: 15px;
-line-height: 35px;
+line-height: 40px;
 }
 .cup {
  position: relative;
@@ -240,6 +250,112 @@ line-height: 35px;
     position: absolute;
     bottom: 0;
     right: 40px;
-    width: 320px;
+    width: 200px;
+    
+ }
+ @media (max-width: 480px) {
+ 
+.coffe-cup {
+  flex-direction: column;
+  padding: 50px;
+ 
+}
+.cup-text {
+  margin: 20px;
+}
+.cup-text h2{
+font-size: 40px;
+}
+
+.cup-text p {
+font-size: 15px;
+line-height: 50px;
+}
+.coffe-cup-box {
+  position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 300px;
+    background-color: #FAE9E0; 
+    z-index: 1;
+}
+.cup img {
+  display: block;
+    position: absolute;
+    bottom: 90px;
+    height: 290px;
+    right: 90px;
+    width: 280px;
     z-index: 2;
  }
+}
+
+ /* American Capucion*/
+ .coffe-day {
+ display: flex;
+ padding: 80px;
+ margin-top: 100px;
+ gap: 100px;
+}
+.coffe-day-text h2{
+font-size: 37px;
+}
+.coffe-day-text p {
+font-size: 15px;
+line-height: 36px;
+}
+.capucino{
+ position: relative;
+ width: 400px;
+ height: 350px;
+}
+.capucino-box{
+   position: absolute;
+    top: 0;
+    right: 0;
+    width: 380px;
+    height: 327px;
+    background-color: #E3EBE7; 
+    z-index: 1;
+}
+.capucino img {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    height: 380px;
+    width: 270px;
+    z-index: 2;
+ }
+ /* coffe shop mobile*/
+
+@media (max-width: 480px) {
+.capucino-box{
+   position: absolute;
+    top: 10px;
+    right: 0;
+    width: 450px;
+    height: 235px;
+    background-color: #E3EBE7; 
+    z-index: 1;
+}
+.capucino img{
+  display: block;
+    position: absolute;
+    bottom: 90px;
+    height: 340px;
+    right: 80px;
+    width: 280px;
+    z-index: 2;
+ }
+ .coffe-day-text {
+  margin: 73px;
+}
+.coffe-day-text h2{
+font-size: 40px;
+}
+.coffe-day-text p {
+font-size: 15px;
+line-height: 50px;
+}
+}
