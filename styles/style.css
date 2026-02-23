@@ -136,7 +136,7 @@ body {
   font-size: 17px;
 }
 .coffe-label {
-  font-size: 47px;
+  font-size: 46px;
 }
 .order-btn {
   background-color: #2f5d50;
@@ -241,7 +241,7 @@ line-height: 40px;
     top: 0;
     right: 0;
     width: 380px;
-    height: 287px;
+    height: 347px;
     background-color: #FAE9E0; 
     z-index: 1;
 
@@ -250,8 +250,9 @@ line-height: 40px;
     position: absolute;
     bottom: 0;
     right: 40px;
-    width: 200px;
-    
+    width: 300px;
+    height: 370px;
+    z-index: 2;
  }
  @media (max-width: 480px) {
  
@@ -334,22 +335,23 @@ line-height: 36px;
    position: absolute;
     top: 10px;
     right: 0;
-    width: 450px;
-    height: 235px;
+    width: 100%;
+    height: 245px;
     background-color: #E3EBE7; 
     z-index: 1;
 }
 .capucino img{
   display: block;
     position: absolute;
-    bottom: 90px;
+    bottom: 80px;
     height: 340px;
     right: 80px;
     width: 280px;
     z-index: 2;
  }
+
  .coffe-day-text {
-  margin: 73px;
+  display: none;
 }
 .coffe-day-text h2{
 font-size: 40px;
@@ -358,4 +360,31 @@ font-size: 40px;
 font-size: 15px;
 line-height: 50px;
 }
+}
+/*Card Container*/
+ .cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 100px;
+  padding: 30px;
+  background-color: #E3EBE7;
+}
+ .card {
+  height: 450px;
+  width: 325px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px (rgba(0, 0, 0, 0.3));
+  cursor: pointer;
+}
+.card-content {
+margin: 30px;
+ padding: 30px 30px;
+ line-height: 36px;
+}
+.card-content h4 {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
