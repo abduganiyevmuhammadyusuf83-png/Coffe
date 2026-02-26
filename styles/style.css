@@ -85,11 +85,11 @@ body {
 }
 .coffe-labels {
   display: flex;
-  flex-direction: column;      /* ustma-ust qilish */
-  justify-content: center;     /* vertical markazlash */
-  align-items: center;         /* horizontal markazlash */
-  text-align: center;          /* matn markazlashuvi */
-  height: 50vh;               /* div balandligi ekran bo‘yicha */
+  flex-direction: column;     
+  justify-content: center;     
+  align-items: center;         
+  text-align: center;          
+  height: 50vh;              
   gap: 15px;
 }
 
@@ -211,43 +211,6 @@ line-height: 40px;
     height: 370px;
     z-index: 2;
  }
- @media (max-width: 375px) {
- 
-.coffe-cup {
-  flex-direction: column;
-  padding: 50px;
- 
-}
-.cup-text {
-  margin: 20px;
-}
-.cup-text h2{
-font-size: 40px;
-}
-
-.cup-text p {
-font-size: 15px;
-line-height: 50px;
-}
-.coffe-cup-box {
-  position: absolute;
-    top: 0;
-    right: 0;
-    width: 450px;
-    height: 300px;
-    background-color: #FAE9E0; 
-    z-index: 1;
-}
-.cup img {
-  display: block;
-    position: absolute;
-    bottom: 90px;
-    height: 290px;
-    right: 90px;
-    width: 280px;
-    z-index: 2;
- }
-}
 
  /* American Capucion*/
  .coffe-day {
@@ -285,39 +248,8 @@ line-height: 36px;
     width: 270px;
     z-index: 2;
  }
- /* coffe shop mobile*/
 
-@media (max-width: 480px) {
-.capucino-box{
-   position: absolute;
-    top: 10px;
-    right: 0;
-    width: 100%;
-    height: 245px;
-    background-color: #E3EBE7; 
-    z-index: 1;
-}
-.capucino img{
-  display: block;
-    position: absolute;
-    bottom: 80px;
-    height: 340px;
-    right: 80px;
-    width: 280px;
-    z-index: 2;
- }
 
- .coffe-day-text {
-  display: none;
-}
-.coffe-day-text h2{
-font-size: 40px;
-}
-.coffe-day-text p {
-font-size: 15px;
-line-height: 50px;
-}
-}
 /*Card Container*/
  .cards-container {
   display: flex;
@@ -351,7 +283,7 @@ line-height: 50px;
 .order-btn {
   background-color: #2f5d50;
   color: white;
-  padding: 15px 30px;
+  padding: 15px 29px;
   border-radius: 5px;
   text-decoration: none;
 }
@@ -420,10 +352,9 @@ font-size: 15px;
   font-size: 25px;
 }
   .coffe-labels {
-    flex-direction: column;    /* ustma-ust qilish */
-    justify-content: center;   /* vertical markazlash */
-    align-items: center;       /* horizontal markazlash */
-    gap: 10px;
+    flex-direction: column;    
+    justify-content: center;   
+    align-items: center;       
   }
   .coffe-image {
     display: none;
@@ -442,6 +373,7 @@ font-size: 15px;
    display: flex;
    align-items: center;
    margin: 20px;
+   gap: 10px;
 }
     .coffe-labels {
     flex-direction: column;
@@ -449,11 +381,141 @@ font-size: 15px;
     align-items: center;
     text-align: center;
     gap: 10px;
-    padding: 0 10px;  /* kichik ekran uchun chet bo‘shligi */
+    height: 25vh;
+    padding: 0 10px;  
   }
-  .order-btn {
-    width: 80%;       /* button kichik ekran uchun moslashadi */
-  }
+  .coffe-cup {
+  flex-direction: column;
 }
+.cup-text {
+margin: 10px;
+}
+.cup-text h2{
+font-size: 38px;
+width: 342px;
+height: 76px;
+line-height: 100%;
+}
+
+.cup-text p {
+font-size: 19px;
+line-height: 36px;
+}
+.coffe-cup-box {
+  position: absolute;
+    top: 10px;
+    right: 0;
+    margin: 90px;
+    width: 450px;
+    height: 240px;
+    background-color: #FAE9E0; 
+    z-index: 1;
+}
+.cup img {
+  display: block;
+    position: absolute;
+    bottom: 40px;
+    height: 200px;
+    right: 100px;
+    width: 280px;
+    margin: 25px;
+    z-index: 2;
+ }
+  /* American Capucion mobile */
+  .coffe-day {
+ display: flex;
+ padding: 10px;
+ margin-top: 90px;
+ gap: 25px;
+}
+.coffe-day-text h2{
+font-size: 37px;
+}
+.coffe-day-text p {
+  width: 334px;
+font-size: 17px;
+line-height: 36px;
+}
+
+.capucino-box{
+    display: none;
+}
+.capucino img {
+ display: none;
+ }
+ /*Card section mobile*/
+ .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 60px;
+  margin-bottom: 70px;
+  padding: 20px;
+  background-color: #eff6f3;
+}
+ .card {
+  height: 440px;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 17px;
+  box-shadow: 0px 5px 10px (rgba(0, 0, 0, 0.3));
+  cursor: pointer;
+}
+.card-content {
+ margin: 20px;
+ padding: 9px 25px;
+ line-height: 36px;
+}
+.card-content h4 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.order-button {  
+  margin-top: 60px;
+}
+.order-btn {
+ display: inline-flex;
+  align-items: center;
+  padding: 5px 40px;
+  top: 40px;
+  font-size: 20px;
+  width: 200px;
+  white-space: nowrap;
+  border-radius: 9px;
+}
+/*Map Section Mobile*/
+.map-section {
+  flex-direction: column;
+  padding: 15px;
+}
+.divider {
+ display: none;
+}
+
+.adress h2 {
+  text-align: center;
+  margin: 10px;
+  font-size: 32px;
+}
+.adress p {
+padding: 25px;
+font-size: 19px;
+text-align: center;
+}
+.map-picture img {
+  height: 260px;
+  width: 320px
+}
+.publisher  {
+text-align: center;
+padding: 30px;
+font-size: 15px;
+line-height: 36px;
+}
+
+
+
+
 
 
