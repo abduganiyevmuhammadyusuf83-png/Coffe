@@ -17,11 +17,6 @@ body {
   display: flex;
 }
 
-/* Logo Lable */
-.logo-label{
-    display: flex;
-}
-
 /* Logo Name */
 
 .logo-name{
@@ -71,80 +66,40 @@ body {
 .hamburger {
   display: none;
 }
-@media (max-width: 480px) {
-  .nav-links,.contact-btn { 
-    display: none;
-  }
-.hamburger {
-   position: absolute;
-    left: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-.hamburger span {
-    width: 28px;
-    height: 3px;
-    background-color: #141414;
-    border-radius: 5px;
-  }
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-   .main-section {
-    justify-content: center;
-  }
-  
-  .coffe-image {
-    display: none;
-  }
-    .media-icons {
-    display: none;
-  }
-  .coffe-motto {
-    font-size: 19px;
-  }
-    .coffe-shop {
-    font-size: 54px;
-  }
-
-   .coffe-labels {
-    align-items: center;
-    font-size: 54px;
-  }
-    .order-btn {
-    margin: 60px;
-    font-size: 20px;
-  }
-}
 
 /*Coffe Shop*/
 
+.grinds-section{
+  display: flex;
+  margin: 30px;
+  align-items: center;
+  gap: 120px;
+}
 .coffe-shop {
   display: flex;
-  max-width: 1400px;
-  margin: 80px;
+  margin: 100px;
   display: flex;
   align-items: center;
-  gap: 310px;
+  gap: 410px;
 }
+.coffe-labels {
+  display: flex;
+  flex-direction: column;      /* ustma-ust qilish */
+  justify-content: center;     /* vertical markazlash */
+  align-items: center;         /* horizontal markazlash */
+  text-align: center;          /* matn markazlashuvi */
+  height: 50vh;               /* div balandligi ekran bo‘yicha */
+  gap: 15px;
+}
+
 .coffe-motto{
-  font-size: 17px;
+  font-size: 19px;
 }
 .coffe-label {
   font-size: 46px;
 }
-.order-btn {
-  background-color: #2f5d50;
-  color: white;
-  padding: 15px 35px;
-  border-radius: 5px;
-  text-decoration: none;
-}
+
 .coffe-image {
  position: relative;
  width: 400px;
@@ -169,23 +124,25 @@ body {
  }
 
 
-.media-icons {
+.icons {
   position: relative;
+  right: 10px;
 }
 .social {
-    position: absolute;
-    right: 20px;
-    bottom: 15px;
+    position: relative;
+    right: 130px;
     display: flex;
-    align-items: center;
-    gap: 20px;
+    transform: translateY(-50%);
+    top: 190px;
 }
 
 /* Iconlar vertikal */
 .icons {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+    margin: 30px;
+    align-items: center;
 }
 
 .icons img {
@@ -194,7 +151,7 @@ body {
 }
 
 /* Vertical text */
-.follow-text {
+.follow-text { 
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     font-size: 28px;
@@ -213,8 +170,8 @@ body {
 /* Coffe Cup */
 .coffe-cup {
  display: flex;
- 
  margin-top: 100px;
+ margin: 50px;
  gap: 100px;
 }
 
@@ -254,7 +211,7 @@ line-height: 40px;
     height: 370px;
     z-index: 2;
  }
- @media (max-width: 480px) {
+ @media (max-width: 375px) {
  
 .coffe-cup {
   flex-direction: column;
@@ -366,27 +323,37 @@ line-height: 50px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 45px;
   margin-top: 100px;
-  padding: 30px;
+  padding: 40px;
   background-color: #E3EBE7;
 }
  .card {
-  height: 450px;
-  width: 325px;
+  height: 440px;
+  width: 320px;
   background-color: #FFFFFF;
-  border-radius: 10px;
+  border-radius: 17px;
   box-shadow: 0px 5px 10px (rgba(0, 0, 0, 0.3));
   cursor: pointer;
 }
 .card-content {
-margin: 30px;
+ margin: 30px;
  padding: 30px 30px;
  line-height: 36px;
 }
 .card-content h4 {
   font-size: 28px;
   margin-bottom: 20px;
+}
+.order-button {
+  margin: 30px;
+}
+.order-btn {
+  background-color: #2f5d50;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
 }
 /*Map Section*/
 .map-section {
@@ -413,6 +380,80 @@ font-size: 19px;
 text-align: center;
 padding: 40px;
 font-size: 15px;
+}
+
+@media (max-width: 375px) {
+  .nav-links,.contact-btn, .follow-text, .icons img { 
+    display: none;
+  }
+.hamburger {
+   position: absolute;
+    left: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.hamburger span {
+    width: 28px;
+    height: 2px;
+    background-color: #141414;
+    border-radius: 5px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+   .main-section {
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    margin-right: 70px;
+  }
+  .logo img {
+  width: 45px;
+  height: 27px;
+}
+  .logo-name{
+  font-size: 25px;
+}
+  .coffe-labels {
+    flex-direction: column;    /* ustma-ust qilish */
+    justify-content: center;   /* vertical markazlash */
+    align-items: center;       /* horizontal markazlash */
+    gap: 10px;
+  }
+  .coffe-image {
+    display: none;
+  }
+    .media-icons {
+    display: none;
+  }
+  .coffe-motto{
+  font-size: 19px;
+  left: 48px;
+  height: 36px;
+  width: 281px;
+  line-height: 100%;
+}
+   .coffe-shop { 
+   display: flex;
+   align-items: center;
+   margin: 20px;
+}
+    .coffe-labels {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 0 10px;  /* kichik ekran uchun chet bo‘shligi */
+  }
+  .order-btn {
+    width: 80%;       /* button kichik ekran uchun moslashadi */
+  }
 }
 
 
