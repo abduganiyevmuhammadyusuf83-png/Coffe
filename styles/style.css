@@ -381,5 +381,51 @@ body {
   width: 364px;
   height: 240px;
 }
+/* American Capucion*/
+.americano-section {
+  max-width: 1220px;
+  margin: 30px;
+}
+   
+.americano {
+  display: flex;
+}
+.americano-text {
+ width: 500px;
+}
+.americano-text h2 {
+  font-size: 35px;
+  line-height: 40px;
+}
+.americano-text p {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.americano-box {
+  left: 190px;
+  width: 420px;
+  height: 256px;
+}
+.americano img {
+  width: 236px;
+  right: 130px;
+  bottom: 40px;
+}
+/*Map Section*/
+
+.divider {
+  width: 92px;
+  height: 1.5px;
+  margin: 25px;
+}
+
+.adress h2 {
+  font-size: 25px;
+}
+.adress p {
+  padding: 10px;
+  font-size: 15px;
+}
 
 }
