@@ -314,7 +314,6 @@ body {
   font-size: 15px;
 }
 @media(max-width: 1220px ) {
-  /* Logo Name */
 
 .container {
   max-width: 1220px;
@@ -322,6 +321,7 @@ body {
 .main-section {
   margin: 30px;
 }
+  /* Logo Name */
 .logo-name {
   font-size: 25px;
 }
@@ -427,5 +427,135 @@ body {
   padding: 10px;
   font-size: 15px;
 }
+}
+@media(max-width: 992px ) {
+/* Navbar */
+.navbar {
+  padding: 5px 0;
+  margin-bottom: 60px;
+  background-color: #89CFF0;
+}
+.logo-name {
+ color: white;
+}
+.nav-links a {
+  color: wheat;
+}
+/* Coffe Cup*/
 
+.cup-section {
+  max-width: 922px;
+  margin-bottom: 150px;
+}
+   
+.cup {
+  display: flex;
+}
+.cup-text {
+ width: 440px;
+ height: 200px;
+}
+.cup-text h2 {
+  font-size: 26px;
+  line-height: 36px;
+}
+.cup-text p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.cup-box {
+  left: 30px;
+  width: 250px;
+  height: 220px;
+  z-index: 1;
+}
+.cup img {
+  top: 10px;
+  right: 215px;
+  width: 240px;
+  height: 200px;
+}
+/* American Capucion*/
+.americano-section {
+  max-width: 922px;
+}
+
+.americano-text {
+ width: 445px;
+ height: 290px;
+}
+.americano-text h2 {
+  font-size: 30px;
+  line-height: 38px;
+}
+.americano-text p {
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.americano-box {
+  left: 140px;
+  width: 310px;
+  height: 280px;
+}
+.americano img {
+
+  width: 190px;
+  right: 100px;
+  top: 5px;
+  height: 270px;
+}
+/*Card Container*/
+.cards-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  background-color: #FAF9F6;
+}
+.card {
+  height: 380px;
+  width: 320px;
+}
+.card-content {
+  margin: 20px;
+  padding: 10px 15px;
+  line-height: 35px;
+}
+.card-content h4 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.order-button {
+  margin: 20px;
+}
+.order-btn {
+  padding: 15px 60px;
+  border-radius: 10px;
+}
+/*Map Section*/
+.map-section {
+  display: flex;
+  margin: 100px;
+}
+.map-section img {
+  width: 500px;
+  height: 300px;
+}
+.divider {
+  width: 90px;
+  height: 2px;
+  background-color: #444a4a;
+  margin: 15px;
+}
+
+.adress h2 {
+  margin: 3px;
+  font-size: 20px;
+}
+.adress p {
+  padding: 10px;
+  font-size: 15px;
+}
 }
