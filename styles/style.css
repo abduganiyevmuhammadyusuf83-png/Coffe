@@ -848,5 +848,84 @@ body {
 
 }
 
+@media(max-width: 480px ) {
+.americano-box {
+  width: 550px; 
+  left: 0;             
+  height: 247px;    
+  top: 30px;
+  background-color: #E3EBE7;
+  position: relative;  
+  z-index: 1; 
+  }
 
+.americano img {
+  position: absolute;
+  left: 160px;
+  transform: translateX(-50%);  
+  width: 236px;          
+  height: 287px;
+  z-index: 2;     
+  }
+  /*Cards Container*/
+.cards-container {
+  display: grid;
+  gap: 40px;
+  padding: 30px;
+  background-color: #FFFFFF;
+}
+.card {
+  height: 457px;
+  width: 337px;
+}
+.card-content {
+  margin: 20px;
+  padding: 10px 15px;
+  line-height: 35px;
+}
+.card-content h4 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.card-content h5 {
+  font-size: 19px;
+  font-weight: 400px;
+  line-height: 36px;
+  text-align: center;
+}
+.order-button {
+  margin: 50px;
+}
+.order-btn {
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+/*Map Sction*/
+.map-section {
+  flex-direction: column;
+  margin: 30px;
+}
+.map-section img {
+  width: 320px;
+  height: 260px;
+  object-fit: cover;
+}
+.divider {
+ display: none;
+}
+.adress {
+  width: 228px;
+  height: 208px;
+  margin: 40px;
+  text-align: center;
+}
+.adress h2 {
+  font-size: 32px;
+}
+.adress p {
+  padding: 5px;
+  font-size: 18px;
+}
+}
 
