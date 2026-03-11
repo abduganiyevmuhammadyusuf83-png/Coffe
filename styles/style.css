@@ -965,6 +965,22 @@ body {
 
 }
 @media(max-width: 375px ) {
+.cup-text {
+ margin: 40px;
+ width: 342px;
+ height: 591px;
+}
+.cup-text h2 {
+  font-size: 30px;
+  line-height: 100%;
+  
+}
+.cup-text p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 40px;
+  
+}
 .americano-box {
   width: 550px; 
   left: 0;             
