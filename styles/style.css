@@ -690,6 +690,123 @@ body {
   font-size: 13px;
 }
 }
+
+@media(max-width: 676px ) {
+/* Navbar */
+.navbar {
+  margin-bottom: 80px;
+  background-color: white;
+}
+
+.logo-name {
+ font-size: 25px;
+}
+
+.logo img {
+  width: 45px;
+  height: 28px;
+}
+ /*Coffe Shop*/
+
+.coffe-labels {
+  gap: 5px;
+}
+.coffe-label {
+  font-size: 40px;
+}
+
+.coffe-image {
+  height: 280px;
+}
+
+.coffe-box {
+  right: 40px;
+  width: 280px;
+  height: 280px;
+}
+.coffe-image img {
+  right: 60px;
+  width: 250px;
+}
+/* Coffe Cup*/
+   
+.cup {
+  display: flex;
+}
+.cup-text {
+ width: 240px;
+ height: 200px;
+ text-align: justify;
+}
+.cup-text h2 {
+  font-size: 20px;
+  line-height: 26px;
+}
+.cup-text p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.cup-box {
+  left: 25px;
+  width: 220px;
+  height: 220px;
+  z-index: 1;
+}
+.cup img {
+  top: 10px;
+  right: 179px;
+  width: 200px;
+  height: 200px;
+}
+/*Americano Section*/
+.americano-text {
+ width: 640px;
+ height: 200px;
+}
+.americano-text h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+.americano-text p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.americano-box {
+  left: 120px;
+  width: 190px;
+  height: 208px;
+}
+.americano img {
+  width: 120px;
+  right: 30px;
+  height: 200px;
+}
+/*Map Section*/
+.map-section img {
+  width: 280px;
+  height: 180px;
+}
+.divider {
+  width: 60px;
+  height: 2px;
+  background-color: #444a4a;
+  margin: 15px;
+}
+
+.adress h2 {
+  margin: 3px;
+  font-size: 20px;
+}
+.adress p {
+  padding: 8px;
+  font-size: 10px;
+}
+}
+
+
 @media(max-width: 480px ) {
   .nav-links li, .contact-btn, .grinds-section{
     display: none;
@@ -847,8 +964,7 @@ body {
 }
 
 }
-
-@media(max-width: 480px ) {
+@media(max-width: 375px ) {
 .americano-box {
   width: 550px; 
   left: 0;             
