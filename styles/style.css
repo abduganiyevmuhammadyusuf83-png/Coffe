@@ -11,6 +11,10 @@ body {
   color: #333;
   background: #fff;
 }
+.img {
+  width: 100%;
+  height: auto;
+}
 /* Main Section */
 
 .main-section {
@@ -20,11 +24,13 @@ body {
 /* Logo Name */
 
 .logo-name {
-  font-size: 32px;
+  font-family: 'Cedarville Cursive';
+  font-weight: 400;
+  font-size: 35px;
 }
 .logo img {
-  width: 56px;
-  height: 34px;
+  width: 60px;
+  height: 40px;
 }
 
 /* Navbar */
@@ -36,6 +42,7 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,14 +50,14 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 60px;
+  gap: 70px;
   font-size: 16px;
   list-style: none;
 }
   
 .nav-links a {
   text-decoration: none;
-  color: black;
+  font-family: Josefin Sans;
   font-size: 15px;
 }
 
@@ -58,7 +65,7 @@ body {
  .contact-btn {
   background-color: #2f5d50;
   color: white;
-  margin: 10px;
+  margin: 30px;
   padding: 12px 25px;
   border-radius: 8px;
   text-decoration: none;
@@ -66,7 +73,6 @@ body {
 .hamburger {
   display: none;
 }
-/*Coffe Shop*/
 .grinds-section {
   display: flex;
   margin: 10px;
@@ -80,20 +86,24 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
 }
-/*Coffe Shop*/
 .coffe-labels {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin: 30px;
   gap: 10px;
 }
-/*Coffe Shop*/
+
 .coffe-motto {
+  font-family: 'Cedarville Cursive';
   font-size: 19px;
 }
 .coffe-label {
+  font-family: Josefin Sans;
   font-size: 46px;
 }
 
@@ -168,20 +178,23 @@ body {
   margin-bottom: 150px;
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 }
    
 .cup {
   display: flex;
 }
 .cup-text {
+ margin: 30px;
  width: 640px;
- height: 290px;
 }
 .cup-text h2 {
+  font-family: Josefin Sans;
   font-size: 38px;
   line-height: 38px;
 }
 .cup-text p {
+  font-family: Alegreya Sans;
   font-size: 19px;
   line-height: 40px;
   font-weight: 400;
@@ -190,7 +203,7 @@ body {
 .cup-box {
   position: relative;
   top: 0;
-  left: 80px;
+  left: 30px;
   width: 380px;
   height: 287px;
   background-color: #fae9e0;
@@ -199,7 +212,7 @@ body {
 .cup img {
   position: relative;
   top: 70px;
-  right: 260px;
+  right: 290px;
   width: 364px;
   height: 262px;
   z-index: 2;
@@ -208,10 +221,11 @@ body {
 /* American Capucion*/
 .americano-section {
   max-width: 1440px;
-  margin: 80px;
+  margin: 0 30px;
   margin-bottom: 150px;
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 }
    
 .americano {
@@ -222,10 +236,12 @@ body {
  height: 290px;
 }
 .americano-text h2 {
+  font-family: Josefin Sans;
   font-size: 38px;
   line-height: 38px;
 }
 .americano-text p {
+  font-family: Alegreya Sans;
   font-size: 19px;
   line-height: 36px;
   font-weight: 400;
@@ -234,7 +250,7 @@ body {
 .americano-box {
   position: relative;
   top: 0;
-  left: 140px;
+  left: 220px;
   width: 410px;
   height: 276px;
   background-color:#E3EBE7
@@ -242,7 +258,7 @@ body {
 .americano img {
   position: relative;
   width: 236px;
-  right: 190px;
+  right: 80px;
   bottom: 30px;
   height: 320px;
   z-index: 2;
@@ -272,11 +288,15 @@ body {
   line-height: 36px;
 }
 .card-content h4 {
+  font-family: Josefin Sans;
   font-size: 28px;
   margin-bottom: 20px;
 }
 .order-button {
   margin: 30px;
+}
+.order-btn {
+  font-family: George Round;
 }
 .order-btn {
   background-color: #2f5d50;
