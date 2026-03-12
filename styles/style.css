@@ -175,10 +175,11 @@ body {
 /* Coffe Cup*/
 
 .cup-section {
+  max-width: 1440px;
+  margin: 0 auto;
   margin-bottom: 150px;
   display: flex;
   justify-content: space-between;
-  gap: 40px;
 }
    
 .cup {
@@ -221,11 +222,10 @@ body {
 /* American Capucion*/
 .americano-section {
   max-width: 1440px;
-  margin: 0 30px;
+  margin: 0 auto;
   margin-bottom: 150px;
   display: flex;
   justify-content: space-between;
-  gap: 40px;
 }
    
 .americano {
@@ -308,8 +308,12 @@ body {
 }
 /*Map Section*/
 .map-section {
+  max-width: 1440px;
+  margin: 30px auto;
   display: flex;
-  margin: 150px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .divider {
   width: 102px;
